@@ -15,7 +15,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~arm ~arm64"
 
-IUSE="+daemon doc client"
+IUSE="+daemon doc client systemd"
 REQUIRED_USE="
 	daemon? ( ${PYTHON_REQUIRED_USE} )
 	client? ( daemon )
@@ -77,6 +77,11 @@ src_compile() {
 			distutils-r1_python_compile
 			popd
 		fi
+		if use systemd; then
+			pushd daemon
+			make service
+			popd
+		fi
 		if use client; then
 			pushd pylib
 			distutils-r1_python_compile
@@ -110,6 +115,11 @@ src_install() {
 			distutils-r1_python_install
 			python_scriptinto /usr/bin
 			python_newscript run_openrazer_daemon.py openrazer-daemon
+			popd
+		fi
+		if use systemd; then
+			pushd daemon
+			DESTDIR=${D} make install-systemd
 			popd
 		fi
 		if use client; then
