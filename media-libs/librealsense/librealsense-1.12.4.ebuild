@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-inherit linux-info toolchain-funcs cmake-utils
+inherit linux-info toolchain-funcs cmake udev
 
 if [[ ${PV} == 9999 ]]; then
 	inherit git-r3
@@ -46,25 +46,22 @@ src_configure() {
 	local mycmakeargs=(
 		-DBUILD_EXAMPLES=$(usex examples true false)
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_compile() {
-	pushd "${BUILD_DIR}" &>/dev/null
-	emake
-	popd &>/dev/null
+	cmake_src_compile
 }
 
 src_install() {
 	einstalldocs
 
-	dolib "${BUILD_DIR}"/librealsense.so*
+	dolib.so "${BUILD_DIR}"/librealsense.so*
 
 	insinto /usr/include/
 	doins -r include/librealsense
 
-	insinto /lib/udev/rules.d/
-	doins config/99-realsense-libusb.rules
+	udev_dorules config/99-realsense-libusb.rules
 
 	insinto /usr/share/${PF}
 	doins scripts/realsense-camera-formats.patch
@@ -82,4 +79,10 @@ pkg_postinst() {
 	ewarn "${EROOT%/}/usr/share/${PF}/realsense-camera-formats.patch"
 	ewarn "This patch may be applied manually or autoapplied by copying it to"
 	ewarn "/etc/portage/patches/sys-kernel/gentoo-sources"
+
+	udev_reload
+}
+
+pkg_postrm() {
+	udev_reload
 }
