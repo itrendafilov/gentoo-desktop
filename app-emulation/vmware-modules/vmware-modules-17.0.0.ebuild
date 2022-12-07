@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils flag-o-matic linux-info linux-mod user udev
+inherit eutils flag-o-matic linux-info linux-mod udev
 
 DESCRIPTION="VMware kernel modules"
 HOMEPAGE="https://github.com/mkubecek/vmware-host-modules"
