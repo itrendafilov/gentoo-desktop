@@ -20,7 +20,7 @@ RDEPEND="
 	<dev-python/sphinx-4.0.0
 	<dev-python/docutils-0.17
 	>=dev-python/sphinx-notfound-page-0.5.0
-	>=dev-python/python-backoff-1.10.0
+	>=dev-python/backoff-1.10.0
 	doc? (
 		app-text/pandoc
 	)

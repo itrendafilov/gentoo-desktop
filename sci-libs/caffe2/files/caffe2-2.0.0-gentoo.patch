@@ -1,14 +1,14 @@
 --- a/cmake/Dependencies.cmake
 +++ b/cmake/Dependencies.cmake
-@@ -1557,7 +1557,6 @@
-   if(NOT USE_SYSTEM_ONNX)
-     add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/../third_party/onnx EXCLUDE_FROM_ALL)
+@@ -1554,7 +1554,6 @@
+       set_target_properties(onnx_proto PROPERTIES CXX_STANDARD 17)
+     endif()
    endif()
 -  add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/../third_party/foxi EXCLUDE_FROM_ALL)
  
    add_definitions(-DONNX_NAMESPACE=${ONNX_NAMESPACE})
    if(NOT USE_SYSTEM_ONNX)
-@@ -1850,7 +1849,6 @@
+@@ -1819,7 +1818,6 @@
  #
  set(TEMP_BUILD_SHARED_LIBS ${BUILD_SHARED_LIBS})
  set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build shared libs" FORCE)
@@ -16,7 +16,7 @@
  
  # Disable compiler feature checks for `fmt`.
  #
-@@ -1859,9 +1857,7 @@
+@@ -1828,9 +1826,7 @@
  # CMAKE_CXX_FLAGS in ways that break feature checks. Since we already know
  # `fmt` is compatible with a superset of the compilers that PyTorch is, it
  # shouldn't be too bad to just disable the checks.
@@ -28,7 +28,7 @@
  # ---[ Kineto
 --- a/c10/CMakeLists.txt
 +++ b/c10/CMakeLists.txt
-@@ -64,7 +64,7 @@
+@@ -65,7 +65,7 @@
  if(${USE_GLOG})
      target_link_libraries(c10 PUBLIC glog::glog)
  endif()
@@ -113,7 +113,7 @@
      endif()
 --- a/caffe2/CMakeLists.txt
 +++ b/caffe2/CMakeLists.txt
-@@ -111,7 +111,7 @@
+@@ -106,7 +106,7 @@
  # Note: the folders that are being commented out have not been properly
  # addressed yet.
  
@@ -122,7 +122,7 @@
    if(NOT TARGET fxdiv)
      set(FXDIV_BUILD_TESTS OFF CACHE BOOL "")
      set(FXDIV_BUILD_BENCHMARKS OFF CACHE BOOL "")
-@@ -537,7 +537,6 @@
+@@ -533,7 +533,6 @@
  if(NOT MSVC)
    set_source_files_properties(${TORCH_SRC_DIR}/csrc/jit/tensorexpr/llvm_jit.cpp PROPERTIES COMPILE_FLAGS -Wno-noexcept-type)
    # Force -Werror on several files
@@ -130,7 +130,7 @@
  endif()
  # Disable certain warnings for GCC-9.X
  if(CMAKE_COMPILER_IS_GNUCXX AND (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER 9.0.0))
-@@ -825,7 +824,6 @@
+@@ -811,7 +812,6 @@
  torch_compile_options(torch_cpu)  # see cmake/public/utils.cmake
  if(HAS_WERROR_SIGN_COMPARE AND WERROR)
    # target_compile_options(torch_cpu PRIVATE "-Werror=sign-compare")
@@ -138,7 +138,7 @@
  endif()
  
  set_property(SOURCE ${ATen_CORE_SRCS} APPEND
-@@ -1017,7 +1015,6 @@
+@@ -975,7 +977,6 @@
  endif()
  
  if(NOT MSVC AND USE_XNNPACK)
@@ -146,7 +146,7 @@
  endif()
  
  # ==========================================================
-@@ -1136,8 +1133,7 @@
+@@ -1095,8 +1098,7 @@
  target_include_directories(torch_cpu PRIVATE
    ${TORCH_ROOT}/third_party/miniz-2.1.0)
  
@@ -169,7 +169,7 @@
      endif()
 --- a/cmake/Dependencies.cmake
 +++ b/cmake/Dependencies.cmake
-@@ -481,7 +481,7 @@ endif()
+@@ -486,7 +486,7 @@ endif()
  list(APPEND Caffe2_DEPENDENCY_LIBS cpuinfo)
  
  # ---[ QNNPACK
@@ -178,7 +178,7 @@
    set(CAFFE2_THIRD_PARTY_ROOT "${PROJECT_SOURCE_DIR}/third_party")
  
    if(NOT DEFINED QNNPACK_SOURCE_DIR)
-@@ -537,7 +537,7 @@ if(USE_QNNPACK)
+@@ -542,7 +542,7 @@ if(USE_QNNPACK)
  endif()
  
  # ---[ Caffe2 Int8 operators (enabled by USE_QNNPACK) depend on gemmlowp and neon2sse headers

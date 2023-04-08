@@ -8,14 +8,10 @@ PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_SINGLE_IMPL=1
 inherit distutils-r1
 
-MYPN=pytorch
-MYPV=$(ver_rs 3 '-')
-MYP=${MYPN}-${MYPV}
-
 DESCRIPTION="Tensors and Dynamic neural networks in Python"
 HOMEPAGE="https://pytorch.org/"
-SRC_URI="https://github.com/pytorch/${MYPN}/archive/refs/tags/v${MYPV}.tar.gz
-	-> ${MYP}.tar.gz"
+SRC_URI="https://github.com/pytorch/${PN}/archive/refs/tags/v${PV}.tar.gz
+	-> ${P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
@@ -28,6 +24,7 @@ RDEPEND="
 	~sci-libs/caffe2-${PV}[${PYTHON_SINGLE_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/typing-extensions[${PYTHON_USEDEP}]
+		dev-python/sympy[${PYTHON_USEDEP}]
 	')
 "
 DEPEND="${RDEPEND}
@@ -36,8 +33,6 @@ DEPEND="${RDEPEND}
 	')
 "
 
-S="${WORKDIR}"/${MYP}
-
 src_prepare() {
 	eapply \
 		"${FILESDIR}"/0002-Don-t-build-libtorch-again-for-PyTorch-1.7.1.patch \
@@ -45,6 +40,7 @@ src_prepare() {
 		"${FILESDIR}"/${P}-global-dlopen.patch \
 		"${FILESDIR}"/pytorch-1.7.1-torch_shm_manager.patch \
 		"${FILESDIR}"/${PN}-1.13.0-setup.patch \
+		"${FILESDIR}"/${P}-emptyso.patch \
 
 	# Set build dir for pytorch's setup
 	sed -i \

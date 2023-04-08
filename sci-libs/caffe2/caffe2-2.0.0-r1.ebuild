@@ -7,18 +7,17 @@ PYTHON_COMPAT=( python3_{9..11} )
 inherit python-single-r1 cmake cuda flag-o-matic
 
 MYPN=pytorch
-MYPV=$(ver_rs 3 '-')
-MYP=${MYPN}-${MYPV}
+MYP=${MYPN}-${PV}
 
 DESCRIPTION="A deep learning framework"
 HOMEPAGE="https://pytorch.org/"
-SRC_URI="https://github.com/pytorch/${MYPN}/archive/refs/tags/v${MYPV}.tar.gz
+SRC_URI="https://github.com/pytorch/${MYPN}/archive/refs/tags/v${PV}.tar.gz
 	-> ${MYP}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="cuda distributed ffmpeg mpi nnpack +numpy opencl opencv openmp qnnpack tensorpipe xnnpack"
+IUSE="cuda distributed fbgemm ffmpeg mpi nnpack +numpy opencl opencv openmp qnnpack tensorpipe xnnpack"
 RESTRICT="test"
 REQUIRED_USE="
 	${PYTHON_REQUIRED_USE}
@@ -43,8 +42,9 @@ RDEPEND="
 	cuda? (
 		=dev-libs/cudnn-8*
 		dev-libs/cudnn-frontend:0/8
-		dev-util/nvidia-cuda-toolkit:=[profiler]
+		<dev-util/nvidia-cuda-toolkit-12:=[profiler]
 	)
+	fbgemm? ( dev-libs/FBGEMM )
 	ffmpeg? ( media-video/ffmpeg:= )
 	mpi? ( sys-cluster/openmpi )
 	nnpack? ( sci-libs/NNPACK )
@@ -55,7 +55,7 @@ RDEPEND="
 	opencv? ( media-libs/opencv:= )
 	qnnpack? ( sci-libs/QNNPACK )
 	tensorpipe? ( sci-libs/tensorpipe )
-	xnnpack? ( sci-libs/XNNPACK )
+	xnnpack? ( >=sci-libs/XNNPACK-2022.12.22 )
 "
 DEPEND="
 	${RDEPEND}
@@ -76,11 +76,10 @@ DEPEND="
 S="${WORKDIR}"/${MYP}
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-2.0.0-gentoo.patch
+	"${FILESDIR}"/${P}-gentoo.patch
 	"${FILESDIR}"/${PN}-1.13.0-install-dirs.patch
-	#"${FILESDIR}"/${PN}-1.12.0-glog-0.6.0.patch
-	#"${FILESDIR}"/${PN}-1.12.0-clang.patch
-	#"${FILESDIR}"/${P}-tensorpipe.patch
+	"${FILESDIR}"/${PN}-1.12.0-glog-0.6.0.patch
+	"${FILESDIR}"/${PN}-1.13.1-tensorpipe.patch
 )
 
 src_prepare() {
@@ -117,7 +116,7 @@ src_configure() {
 		-DUSE_DISTRIBUTED=$(usex distributed)
 		-DUSE_MPI=$(usex mpi)
 		-DUSE_FAKELOWP=OFF
-		-DUSE_FBGEMM=OFF # TODO
+		-DUSE_FBGEMM=$(usex fbgemm)
 		-DUSE_FFMPEG=$(usex ffmpeg)
 		-DUSE_GFLAGS=ON
 		-DUSE_GLOG=ON
@@ -145,6 +144,7 @@ src_configure() {
 		-DPYBIND11_PYTHON_VERSION="${EPYTHON#python}"
 		-DPYTHON_EXECUTABLE="${PYTHON}"
 		-DUSE_ITT=OFF
+		-DBLAS=Eigen # avoid the use of MKL, if found on the system
 		-DUSE_SYSTEM_EIGEN_INSTALL=ON
 		-DUSE_SYSTEM_PTHREADPOOL=ON
 		-DUSE_SYSTEM_FXDIV=ON
@@ -179,7 +179,7 @@ src_install() {
 	mv "${ED}"/usr/lib/python*/site-packages/caffe2 python/ || die
 	mv "${ED}"/usr/include/torch python/torch/include || die
 	cp torch/version.py python/torch/ || die
-	rm -r "${ED}"/var/tmp || die
+	rm -rf "${ED}"/var/tmp || die
 	python_domodule python/caffe2
 	python_domodule python/torch
 }
