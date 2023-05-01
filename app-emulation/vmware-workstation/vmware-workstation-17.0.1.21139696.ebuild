@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{6..11} )
 inherit eutils readme.gentoo-r1 gnome2-utils pam python-any-r1 systemd xdg-utils
 
 MY_PN="VMware-Workstation-Full"
