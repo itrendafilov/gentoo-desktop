@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>gentoo@sattvik.com</email>
+	</maintainer>
+	<longdescription lang="en">
+			WaveForms is the virtual instrument suite for Electronics Explorer,
+			Digital Discovery, Analog Discovery, Analog Discovery 2 and Analog
+			Discovery 2 - NI Edition devices.
+	</longdescription>
+</pkgmetadata>

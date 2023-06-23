@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>gentoo@sattvik.com</email>
+	</maintainer>
+	<longdescription lang="en">
+			Adept Utilities is a set of command line applications that can be
+			used in conjunction with the Adept Runtime to manage and
+			communicate with Digilent's devices.
+	</longdescription>
+</pkgmetadata>
