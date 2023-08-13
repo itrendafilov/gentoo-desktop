@@ -24,6 +24,8 @@ RDEPEND="
 	sys-apps/gawk
 	x11-libs/libXpm
 	x11-libs/cairo
+	app-editors/gvim
+	x11-terms/xterm
 "
 DEPEND="${RDEPEND}"
 
