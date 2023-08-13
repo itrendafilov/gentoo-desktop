@@ -17,7 +17,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="virtual/libusb:1"
+DEPEND="virtual/libusb:1
+	dev-embedded/libftd2xx"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
@@ -63,10 +64,10 @@ src_install() {
 	udev_dorules 52-digilent-usb.rules
 
 	# driver installation
-	(
-		insinto /usr
-		dolib.so ftdi.drivers_1.4.24-x86_64/lib64/libftd2xx.so.1.4.24
-		dosym libftd2xx.so.1.4.24 ${EP}/usr/lib64/libftd2xx.so.1
-		dosym libftd2xx.so.1.4.24 ${EP}/usr/lib64/libftd2xx.so
-	)
+	#(
+	#	insinto /usr
+	#	dolib.so ftdi.drivers_1.4.24-x86_64/lib64/libftd2xx.so.1.4.24
+	#	dosym libftd2xx.so.1.4.24 ${EP}/usr/lib64/libftd2xx.so.1
+	#	dosym libftd2xx.so.1.4.24 ${EP}/usr/lib64/libftd2xx.so
+	#)
 }
