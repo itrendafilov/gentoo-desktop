@@ -1,10 +1,10 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{6..11} )
-inherit eutils readme.gentoo-r1 gnome2-utils pam python-any-r1 systemd xdg-utils
+inherit readme.gentoo-r1 gnome2-utils pam python-any-r1 systemd xdg-utils
 
 MY_PN="VMware-Workstation-Full"
 MY_PV=$(ver_cut 1-3)
