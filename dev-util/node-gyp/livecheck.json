@@ -1,0 +1,5 @@
+{
+  "regex": "archive/refs/tags/v(\\d+\\.\\d+(?:\\.\\d+)?)\\.tar\\.gz",
+  "type": "regex",
+  "url": "https://github.com/nodejs/node-gyp/tags"
+}
