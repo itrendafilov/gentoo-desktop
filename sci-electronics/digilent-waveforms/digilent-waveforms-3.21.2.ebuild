@@ -40,7 +40,7 @@ src_install() {
 
 	dolib.so usr/lib/libdwf.so
 	dolib.so usr/lib/libdwf.so.3
-	dolib.so usr/lib/libdwf.so.3.20.1
+	dolib.so usr/lib/libdwf.so.3.21.2
 
 	for manpage in usr/share/man/man1/*.gz; do
 		gunzip "$manpage"
