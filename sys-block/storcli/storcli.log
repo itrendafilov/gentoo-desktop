@@ -1,0 +1,879 @@
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:15:54.453 2025 : CtMain::main processing for command=show all 
+Fri Jun  6 16:15:54.454 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:15:54.454 2025 : Entering ShowSystemCp::process
+Fri Jun  6 16:15:54.454 2025 : Entering LinuxControllerExplorer::explore 
+Fri Jun  6 16:15:54.454 2025 : Entering LinuxControllerExplorer::getCtrlCount
+Fri Jun  6 16:15:54.454 2025 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Fri Jun  6 16:15:54.454 2025 : LinuxControllerExplorer::explore ctrlCount=1
+Fri Jun  6 16:15:54.454 2025 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Fri Jun  6 16:15:54.454 2025 : SlItControllerExplorer::explore - Entering
+Fri Jun  6 16:15:54.455 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.455 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.455 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.455 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.455 2025 : SlItControllerExplorer::explore - Getting the StoreLIB instance for SAS3.5 IT controller
+Fri Jun  6 16:15:54.455 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.473 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.473 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT
+Fri Jun  6 16:15:54.473 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.473 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.473 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT - retCode:0x0
+Fri Jun  6 16:15:54.473 2025 : SlItControllerExplorer::explore - Controller count:1
+Fri Jun  6 16:15:54.473 2025 : SlItControllerExplorer::explore - Controller count index:0
+Fri Jun  6 16:15:54.473 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT
+Fri Jun  6 16:15:54.473 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.474 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.474 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:15:54.474 2025 : SlItControllerExplorer::explore - Domain:0 Bus:14 device:0 Function:0
+Fri Jun  6 16:15:54.474 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT
+Fri Jun  6 16:15:54.474 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.475 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.475 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:15:54.475 2025 : SlItControllerExplorer::explore - Adapter is good
+Fri Jun  6 16:15:54.475 2025 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Fri Jun  6 16:15:54.475 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Fri Jun  6 16:15:54.475 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl mfiCmd=5 scsiStatus=0
+Fri Jun  6 16:15:54.475 2025 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Fri Jun  6 16:15:54.475 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.475 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.475 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.476 2025 : the property ctrlBusy is set to 0 
+Fri Jun  6 16:15:54.476 2025 : Entering ShowSystemCp::ShwSystemOverview
+Fri Jun  6 16:15:54.476 2025 : ShowSystemCp::ShwSystemOverview - Getting headline
+Fri Jun  6 16:15:54.476 2025 : Entering ShowSystemCp::getHeadline
+Fri Jun  6 16:15:54.476 2025 : ShowSystemCp::ShwSystemOverview - Getting BasicSystemInfo
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.476 2025 : Entering ShowSystemCp::getSLITVersion = 07.3405.0200.0000
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.476 2025 : Entering ShowSystemCp::getSLIR3Version = 16.16-0
+Fri Jun  6 16:15:54.476 2025 : ShowSystemCp::ShwSystemOverview - Getting BasicSystemInfo retCode:0 Count:1
+Fri Jun  6 16:15:54.476 2025 : ShowSystemCp::ShwSystemOverview - IT / IT3 - Getting BasicCtrlInfo
+Fri Jun  6 16:15:54.476 2025 : Entering ShowSystemCp::GetBasicCtrlInfo ISlsi=0 ctrlType=15
+Fri Jun  6 16:15:54.476 2025 : Entering ShowSystemCp::GetITCtrlInfo
+Fri Jun  6 16:15:54.476 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.476 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:15:54.476 2025 : Entering ITUtils::GetManufacturingPage5
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.476 2025 : Exiting ITUtils::GetManufacturingPage5
+Fri Jun  6 16:15:54.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.477 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.477 2025 : Entering ShowSystemCp::GetBasicCtrlInfo - Exiting - retVal:0
+Fri Jun  6 16:15:54.477 2025 : ShowSystemCp::ShwSystemOverview - IT / IT3 - Getting BasicCtrlInfo retCode:0
+Fri Jun  6 16:15:54.477 2025 : MWCliRootCp::process processed for subtokenID=14 errorCode=0
+Fri Jun  6 16:15:54.477 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:15:54.477 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:15:54.477 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.481 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.481 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:15:54.481 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:15:54.481 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:15:54.481 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:16:29.201 2025 : CtMain::main processing for command=show / c0 
+Fri Jun  6 16:16:29.202 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:16:29.202 2025 : Entering HelpCp::process 
+Fri Jun  6 16:16:29.203 2025 : MWCliRootCp::process processed for subtokenID=1 errorCode=-1
+Fri Jun  6 16:16:29.203 2025 : Entering MWCliRootCp::handleOuput retCode=-1, DriveFull=0
+Fri Jun  6 16:16:29.203 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:29.229 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:29.229 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:16:29.229 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:29.233 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:29.233 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:29.233 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:29.233 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:16:29.233 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:29.233 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:29.233 2025 : CtMain::main command completed with retcode=255
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:16:33.450 2025 : CtMain::main processing for command=/ c 0 show 
+Fri Jun  6 16:16:33.450 2025 : Entering LinuxControllerExplorer::explore 
+Fri Jun  6 16:16:33.450 2025 : Entering LinuxControllerExplorer::getCtrlCount
+Fri Jun  6 16:16:33.450 2025 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Fri Jun  6 16:16:33.450 2025 : LinuxControllerExplorer::explore ctrlCount=1
+Fri Jun  6 16:16:33.450 2025 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Fri Jun  6 16:16:33.450 2025 : SlItControllerExplorer::explore - Entering
+Fri Jun  6 16:16:33.450 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.451 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.451 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.451 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.451 2025 : SlItControllerExplorer::explore - Getting the StoreLIB instance for SAS3.5 IT controller
+Fri Jun  6 16:16:33.451 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.476 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT
+Fri Jun  6 16:16:33.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.476 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.476 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT - retCode:0x0
+Fri Jun  6 16:16:33.476 2025 : SlItControllerExplorer::explore - Controller count:1
+Fri Jun  6 16:16:33.476 2025 : SlItControllerExplorer::explore - Controller count index:0
+Fri Jun  6 16:16:33.476 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT
+Fri Jun  6 16:16:33.476 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.477 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.477 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:16:33.477 2025 : SlItControllerExplorer::explore - Domain:0 Bus:14 device:0 Function:0
+Fri Jun  6 16:16:33.477 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT
+Fri Jun  6 16:16:33.477 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.478 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.478 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:16:33.478 2025 : SlItControllerExplorer::explore - Adapter is good
+Fri Jun  6 16:16:33.478 2025 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Fri Jun  6 16:16:33.478 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Fri Jun  6 16:16:33.478 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl mfiCmd=5 scsiStatus=0
+Fri Jun  6 16:16:33.478 2025 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Fri Jun  6 16:16:33.478 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.478 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.478 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.479 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.480 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:16:33.480 2025 : initializing the RaidManager Instance 
+Fri Jun  6 16:16:33.480 2025 : Entering ITSwCtPrCp::process
+Fri Jun  6 16:16:33.480 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.480 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.481 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.481 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.481 2025 : ITSwCtPrCp::process - Retreiving basic controller info
+Fri Jun  6 16:16:33.481 2025 : Entering ITSwCtPrCp::getBasicCtrlInfo
+Fri Jun  6 16:16:33.481 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.481 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.481 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.481 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.481 2025 : Entering ITSwCtPrCp::getPciInfo
+Fri Jun  6 16:16:33.481 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.482 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.482 2025 : Exiting ITSwCtPrCp::getPciInfo
+Fri Jun  6 16:16:33.482 2025 : Entering ITSwCtPrCp::getDriverInfo
+Fri Jun  6 16:16:33.482 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.482 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.482 2025 : Exiting ITSwCtPrCp::getDriverInfo
+Fri Jun  6 16:16:33.482 2025 : Entering ITUtils::GetManufacturingPage0
+Fri Jun  6 16:16:33.482 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.482 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.482 2025 : Exiting ITUtils::GetManufacturingPage0
+Fri Jun  6 16:16:33.482 2025 : ITUtils::isPlatformSecSupported - Getting controller information...
+Fri Jun  6 16:16:33.482 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.482 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.483 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.483 2025 : ITUtils::isPlatformSecSupported - getSlCtrlInfo retCode:0
+Fri Jun  6 16:16:33.483 2025 : Exiting ITSwCtPrCp::getBasicCtrlInfo
+Fri Jun  6 16:16:33.483 2025 : ITSwCtPrCp::process - Retreiving drive information
+Fri Jun  6 16:16:33.483 2025 : Entering ITSwCtPrCp::getPdInfoTable
+Fri Jun  6 16:16:33.483 2025 : Entering ITUtils::GetPdList
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.483 2025 : Exiting ITUtils::GetPdList
+Fri Jun  6 16:16:33.483 2025 : Entering ITSwCtPrCp::createSortedPdData
+Fri Jun  6 16:16:33.483 2025 : Exiting ITSwCtPrCp::createSortedPdData
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.483 2025 : Entering ITUtils::slGetPdInfo deviceId=0
+Fri Jun  6 16:16:33.483 2025 : Entering ITUtils::getPdInfo for devid=0
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.483 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.483 2025 : ITUtils::slGetPdInfo  pdfwstate=0 scsiDevType =13
+Fri Jun  6 16:16:33.483 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.483 2025 : Entering ITUtils::slGetPdInfo deviceId=1
+Fri Jun  6 16:16:33.483 2025 : Entering ITUtils::getPdInfo for devid=1
+Fri Jun  6 16:16:33.483 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.486 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.486 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.486 2025 : ITUtils::slGetPdInfo  pdfwstate=1 scsiDevType =0
+Fri Jun  6 16:16:33.486 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.486 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.486 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.486 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.486 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.486 2025 : Entering ITUtils::readInquiryData targetId=1 scsiDevType=3
+Fri Jun  6 16:16:33.486 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.487 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.487 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.487 2025 : Entering ITUtils::slGetPdInfo deviceId=2
+Fri Jun  6 16:16:33.487 2025 : Entering ITUtils::getPdInfo for devid=2
+Fri Jun  6 16:16:33.487 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.490 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.490 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.490 2025 : ITUtils::slGetPdInfo  pdfwstate=2 scsiDevType =0
+Fri Jun  6 16:16:33.490 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.490 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.490 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.490 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.490 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.490 2025 : Entering ITUtils::readInquiryData targetId=2 scsiDevType=3
+Fri Jun  6 16:16:33.490 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.491 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.491 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.491 2025 : Entering ITUtils::slGetPdInfo deviceId=3
+Fri Jun  6 16:16:33.491 2025 : Entering ITUtils::getPdInfo for devid=3
+Fri Jun  6 16:16:33.491 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.493 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.493 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.493 2025 : ITUtils::slGetPdInfo  pdfwstate=3 scsiDevType =0
+Fri Jun  6 16:16:33.493 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.493 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.493 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.494 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.494 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.494 2025 : Entering ITUtils::readInquiryData targetId=3 scsiDevType=3
+Fri Jun  6 16:16:33.494 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.495 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.495 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.495 2025 : Entering ITUtils::slGetPdInfo deviceId=4
+Fri Jun  6 16:16:33.495 2025 : Entering ITUtils::getPdInfo for devid=4
+Fri Jun  6 16:16:33.495 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.497 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.497 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.497 2025 : ITUtils::slGetPdInfo  pdfwstate=4 scsiDevType =0
+Fri Jun  6 16:16:33.497 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.497 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.497 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.498 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.498 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.498 2025 : Entering ITUtils::readInquiryData targetId=4 scsiDevType=3
+Fri Jun  6 16:16:33.498 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.498 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.498 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.498 2025 : Entering ITUtils::slGetPdInfo deviceId=5
+Fri Jun  6 16:16:33.498 2025 : Entering ITUtils::getPdInfo for devid=5
+Fri Jun  6 16:16:33.498 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.501 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.501 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.501 2025 : ITUtils::slGetPdInfo  pdfwstate=5 scsiDevType =0
+Fri Jun  6 16:16:33.501 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.501 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.501 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.502 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.502 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.502 2025 : Entering ITUtils::readInquiryData targetId=5 scsiDevType=3
+Fri Jun  6 16:16:33.502 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.502 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.502 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.502 2025 : Entering ITUtils::slGetPdInfo deviceId=6
+Fri Jun  6 16:16:33.502 2025 : Entering ITUtils::getPdInfo for devid=6
+Fri Jun  6 16:16:33.502 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.505 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.505 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.505 2025 : ITUtils::slGetPdInfo  pdfwstate=6 scsiDevType =0
+Fri Jun  6 16:16:33.505 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.505 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.505 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.506 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.506 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.506 2025 : Entering ITUtils::readInquiryData targetId=6 scsiDevType=3
+Fri Jun  6 16:16:33.506 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.506 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.506 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.506 2025 : Entering ITUtils::slGetPdInfo deviceId=7
+Fri Jun  6 16:16:33.506 2025 : Entering ITUtils::getPdInfo for devid=7
+Fri Jun  6 16:16:33.506 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.507 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.507 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:16:33.507 2025 : ITUtils::slGetPdInfo  pdfwstate=7 scsiDevType =0
+Fri Jun  6 16:16:33.507 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:16:33.507 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.507 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.507 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.507 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:16:33.507 2025 : Entering ITUtils::readInquiryData targetId=7 scsiDevType=3
+Fri Jun  6 16:16:33.507 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.508 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.508 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:16:33.508 2025 : Exiting ITSwCtPrCp::process
+Fri Jun  6 16:16:33.508 2025 : MWCliRootCp::process processed for subtokenID=12 errorCode=0
+Fri Jun  6 16:16:33.508 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:16:33.508 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:16:33.508 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.511 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.511 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:16:33.511 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:16:33.511 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:16:33.511 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:17:46.145 2025 : CtMain::main processing for command=help 
+Fri Jun  6 16:17:46.146 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:17:46.146 2025 : Entering HelpCp::process 
+Fri Jun  6 16:17:46.147 2025 : MWCliRootCp::process processed for subtokenID=1 errorCode=0
+Fri Jun  6 16:17:46.147 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:17:46.147 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:17:46.173 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:17:46.173 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:17:46.173 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:17:46.176 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:17:46.176 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:17:46.177 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:17:46.177 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:17:46.177 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:17:46.177 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:17:46.177 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:18:03.871 2025 : CtMain::main processing for command=help 
+Fri Jun  6 16:18:03.873 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:18:03.873 2025 : Entering HelpCp::process 
+Fri Jun  6 16:18:03.873 2025 : MWCliRootCp::process processed for subtokenID=1 errorCode=0
+Fri Jun  6 16:18:03.873 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:18:03.873 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:18:03.890 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:18:03.890 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:18:03.890 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:18:03.893 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:18:03.893 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:18:03.893 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:18:03.893 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:18:03.893 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:18:03.893 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:18:03.893 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:19:53.586 2025 : CtMain::main processing for command=/ c 0 download bios file=/home/itrendafilov/Downloads/9500-8i/9500_8i_Pkg_P35_MIXED_FW_BIOS_UEFI/SAS35BIOS_UEFI_SAS3.5_IT_X64_ARM/IT_HBA_X64_BIOS_PKG_E6.rom 
+Fri Jun  6 16:19:53.587 2025 : Entering LinuxControllerExplorer::explore 
+Fri Jun  6 16:19:53.587 2025 : Entering LinuxControllerExplorer::getCtrlCount
+Fri Jun  6 16:19:53.587 2025 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Fri Jun  6 16:19:53.587 2025 : LinuxControllerExplorer::explore ctrlCount=1
+Fri Jun  6 16:19:53.587 2025 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Fri Jun  6 16:19:53.587 2025 : SlItControllerExplorer::explore - Entering
+Fri Jun  6 16:19:53.587 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.587 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.587 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.587 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.587 2025 : SlItControllerExplorer::explore - Getting the StoreLIB instance for SAS3.5 IT controller
+Fri Jun  6 16:19:53.587 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.604 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.605 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT
+Fri Jun  6 16:19:53.605 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.605 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.605 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT - retCode:0x0
+Fri Jun  6 16:19:53.605 2025 : SlItControllerExplorer::explore - Controller count:1
+Fri Jun  6 16:19:53.605 2025 : SlItControllerExplorer::explore - Controller count index:0
+Fri Jun  6 16:19:53.605 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT
+Fri Jun  6 16:19:53.605 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.606 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.606 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:19:53.606 2025 : SlItControllerExplorer::explore - Domain:0 Bus:14 device:0 Function:0
+Fri Jun  6 16:19:53.606 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT
+Fri Jun  6 16:19:53.606 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.606 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.606 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:19:53.606 2025 : SlItControllerExplorer::explore - Adapter is good
+Fri Jun  6 16:19:53.606 2025 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Fri Jun  6 16:19:53.606 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Fri Jun  6 16:19:53.606 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl mfiCmd=5 scsiStatus=0
+Fri Jun  6 16:19:53.606 2025 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Fri Jun  6 16:19:53.606 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.607 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.607 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.607 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.608 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:19:53.608 2025 : initializing the RaidManager Instance 
+Fri Jun  6 16:19:53.608 2025 : Entering ITCtFlshCp::process
+Fri Jun  6 16:19:53.608 2025 : Entering ITCtFlshCp::getFileLength
+Fri Jun  6 16:19:53.608 2025 : Exiting ITCtFlshCp::getFileLength - File length:207752
+Fri Jun  6 16:19:53.609 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:19:53.609 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:53.609 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:53.609 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:19:53.609 2025 : ITCtFlshCp::process - Get controller info retCode:0
+Fri Jun  6 16:19:53.609 2025 : ITCtFlshCp::process - Is controller valid:0
+Fri Jun  6 16:19:53.609 2025 : ITCtFlshCp::process - Firmware found:0
+Fri Jun  6 16:19:53.609 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:54.553 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:54.553 2025 : ITCtFlshCp::process - Flash successful
+Fri Jun  6 16:19:54.553 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:19:54.553 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:19:54.553 2025 : Exiting ITCtFlshCp::process
+Fri Jun  6 16:19:54.553 2025 : MWCliRootCp::process processed for subtokenID=105 errorCode=0
+Fri Jun  6 16:19:54.553 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:19:54.553 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:19:54.553 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:57.416 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:57.416 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:19:57.416 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:19:57.416 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:19:57.416 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:20:04.079 2025 : CtMain::main processing for command=/ c 0 show 
+Fri Jun  6 16:20:04.079 2025 : Entering LinuxControllerExplorer::explore 
+Fri Jun  6 16:20:04.079 2025 : Entering LinuxControllerExplorer::getCtrlCount
+Fri Jun  6 16:20:04.079 2025 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Fri Jun  6 16:20:04.079 2025 : LinuxControllerExplorer::explore ctrlCount=1
+Fri Jun  6 16:20:04.079 2025 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Fri Jun  6 16:20:04.079 2025 : SlItControllerExplorer::explore - Entering
+Fri Jun  6 16:20:04.079 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.079 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.079 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.079 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.079 2025 : SlItControllerExplorer::explore - Getting the StoreLIB instance for SAS3.5 IT controller
+Fri Jun  6 16:20:04.079 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.259 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.259 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT
+Fri Jun  6 16:20:04.259 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.259 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.259 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT - retCode:0x0
+Fri Jun  6 16:20:04.259 2025 : SlItControllerExplorer::explore - Controller count:1
+Fri Jun  6 16:20:04.259 2025 : SlItControllerExplorer::explore - Controller count index:0
+Fri Jun  6 16:20:04.259 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT
+Fri Jun  6 16:20:04.259 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.260 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.260 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:20:04.260 2025 : SlItControllerExplorer::explore - Domain:0 Bus:14 device:0 Function:0
+Fri Jun  6 16:20:04.260 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT
+Fri Jun  6 16:20:04.260 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.260 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.260 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:20:04.260 2025 : SlItControllerExplorer::explore - Adapter is good
+Fri Jun  6 16:20:04.260 2025 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Fri Jun  6 16:20:04.260 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Fri Jun  6 16:20:04.260 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl mfiCmd=5 scsiStatus=0
+Fri Jun  6 16:20:04.260 2025 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Fri Jun  6 16:20:04.260 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.261 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.261 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.261 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.262 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:20:04.262 2025 : initializing the RaidManager Instance 
+Fri Jun  6 16:20:04.263 2025 : Entering ITSwCtPrCp::process
+Fri Jun  6 16:20:04.263 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.263 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.263 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.263 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.263 2025 : ITSwCtPrCp::process - Retreiving basic controller info
+Fri Jun  6 16:20:04.263 2025 : Entering ITSwCtPrCp::getBasicCtrlInfo
+Fri Jun  6 16:20:04.263 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.263 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.263 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.263 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.263 2025 : Entering ITSwCtPrCp::getPciInfo
+Fri Jun  6 16:20:04.263 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITSwCtPrCp::getPciInfo
+Fri Jun  6 16:20:04.265 2025 : Entering ITSwCtPrCp::getDriverInfo
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITSwCtPrCp::getDriverInfo
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::GetManufacturingPage0
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITUtils::GetManufacturingPage0
+Fri Jun  6 16:20:04.265 2025 : ITUtils::isPlatformSecSupported - Getting controller information...
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.265 2025 : ITUtils::isPlatformSecSupported - getSlCtrlInfo retCode:0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITSwCtPrCp::getBasicCtrlInfo
+Fri Jun  6 16:20:04.265 2025 : ITSwCtPrCp::process - Retreiving drive information
+Fri Jun  6 16:20:04.265 2025 : Entering ITSwCtPrCp::getPdInfoTable
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::GetPdList
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITUtils::GetPdList
+Fri Jun  6 16:20:04.265 2025 : Entering ITSwCtPrCp::createSortedPdData
+Fri Jun  6 16:20:04.265 2025 : Exiting ITSwCtPrCp::createSortedPdData
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::slGetPdInfo deviceId=0
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::getPdInfo for devid=0
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.265 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.265 2025 : ITUtils::slGetPdInfo  pdfwstate=0 scsiDevType =13
+Fri Jun  6 16:20:04.265 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::slGetPdInfo deviceId=1
+Fri Jun  6 16:20:04.265 2025 : Entering ITUtils::getPdInfo for devid=1
+Fri Jun  6 16:20:04.265 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.268 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.268 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.268 2025 : ITUtils::slGetPdInfo  pdfwstate=1 scsiDevType =0
+Fri Jun  6 16:20:04.268 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.268 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.268 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.269 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.269 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.269 2025 : Entering ITUtils::readInquiryData targetId=1 scsiDevType=3
+Fri Jun  6 16:20:04.269 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.269 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.269 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.269 2025 : Entering ITUtils::slGetPdInfo deviceId=2
+Fri Jun  6 16:20:04.269 2025 : Entering ITUtils::getPdInfo for devid=2
+Fri Jun  6 16:20:04.269 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.272 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.272 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.272 2025 : ITUtils::slGetPdInfo  pdfwstate=2 scsiDevType =0
+Fri Jun  6 16:20:04.272 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.272 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.272 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.273 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.273 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.273 2025 : Entering ITUtils::readInquiryData targetId=2 scsiDevType=3
+Fri Jun  6 16:20:04.273 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.273 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.273 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.273 2025 : Entering ITUtils::slGetPdInfo deviceId=3
+Fri Jun  6 16:20:04.273 2025 : Entering ITUtils::getPdInfo for devid=3
+Fri Jun  6 16:20:04.273 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.276 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.276 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.276 2025 : ITUtils::slGetPdInfo  pdfwstate=3 scsiDevType =0
+Fri Jun  6 16:20:04.276 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.276 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.276 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.277 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.277 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.277 2025 : Entering ITUtils::readInquiryData targetId=3 scsiDevType=3
+Fri Jun  6 16:20:04.277 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.277 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.277 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.277 2025 : Entering ITUtils::slGetPdInfo deviceId=4
+Fri Jun  6 16:20:04.277 2025 : Entering ITUtils::getPdInfo for devid=4
+Fri Jun  6 16:20:04.277 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.280 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.280 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.280 2025 : ITUtils::slGetPdInfo  pdfwstate=4 scsiDevType =0
+Fri Jun  6 16:20:04.280 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.280 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.280 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.280 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.280 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.280 2025 : Entering ITUtils::readInquiryData targetId=4 scsiDevType=3
+Fri Jun  6 16:20:04.280 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.281 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.281 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.281 2025 : Entering ITUtils::slGetPdInfo deviceId=5
+Fri Jun  6 16:20:04.281 2025 : Entering ITUtils::getPdInfo for devid=5
+Fri Jun  6 16:20:04.281 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.284 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.284 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.284 2025 : ITUtils::slGetPdInfo  pdfwstate=5 scsiDevType =0
+Fri Jun  6 16:20:04.284 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.284 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.284 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.284 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.284 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.284 2025 : Entering ITUtils::readInquiryData targetId=5 scsiDevType=3
+Fri Jun  6 16:20:04.284 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.285 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.285 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.285 2025 : Entering ITUtils::slGetPdInfo deviceId=6
+Fri Jun  6 16:20:04.285 2025 : Entering ITUtils::getPdInfo for devid=6
+Fri Jun  6 16:20:04.285 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.288 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.288 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.288 2025 : ITUtils::slGetPdInfo  pdfwstate=6 scsiDevType =0
+Fri Jun  6 16:20:04.288 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.288 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.288 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.288 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.288 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.288 2025 : Entering ITUtils::readInquiryData targetId=6 scsiDevType=3
+Fri Jun  6 16:20:04.288 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.289 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.289 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.289 2025 : Entering ITUtils::slGetPdInfo deviceId=7
+Fri Jun  6 16:20:04.289 2025 : Entering ITUtils::getPdInfo for devid=7
+Fri Jun  6 16:20:04.289 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.290 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.290 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:20:04.290 2025 : ITUtils::slGetPdInfo  pdfwstate=7 scsiDevType =0
+Fri Jun  6 16:20:04.290 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:20:04.290 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.290 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.291 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.291 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:20:04.291 2025 : Entering ITUtils::readInquiryData targetId=7 scsiDevType=3
+Fri Jun  6 16:20:04.291 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.291 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.291 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:20:04.291 2025 : Exiting ITSwCtPrCp::process
+Fri Jun  6 16:20:04.291 2025 : MWCliRootCp::process processed for subtokenID=12 errorCode=0
+Fri Jun  6 16:20:04.291 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:20:04.291 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:20:04.291 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.294 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.294 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:20:04.294 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:20:04.294 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:20:04.294 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:21:05.505 2025 : CtMain::main processing for command=/ c 0 download file=/home/itrendafilov/Downloads/9500-8i/9500_8i_Pkg_P35_MIXED_FW_BIOS_UEFI/Firmware/HBA_9500-8i_SAS_SATA_Profile.bin 
+Fri Jun  6 16:21:05.505 2025 : Entering LinuxControllerExplorer::explore 
+Fri Jun  6 16:21:05.505 2025 : Entering LinuxControllerExplorer::getCtrlCount
+Fri Jun  6 16:21:05.505 2025 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Fri Jun  6 16:21:05.505 2025 : LinuxControllerExplorer::explore ctrlCount=1
+Fri Jun  6 16:21:05.505 2025 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Fri Jun  6 16:21:05.505 2025 : SlItControllerExplorer::explore - Entering
+Fri Jun  6 16:21:05.505 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.506 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.506 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.506 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.506 2025 : SlItControllerExplorer::explore - Getting the StoreLIB instance for SAS3.5 IT controller
+Fri Jun  6 16:21:05.506 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.523 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.523 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT
+Fri Jun  6 16:21:05.523 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.523 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.523 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT - retCode:0x0
+Fri Jun  6 16:21:05.523 2025 : SlItControllerExplorer::explore - Controller count:1
+Fri Jun  6 16:21:05.523 2025 : SlItControllerExplorer::explore - Controller count index:0
+Fri Jun  6 16:21:05.523 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT
+Fri Jun  6 16:21:05.523 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.524 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.524 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:21:05.524 2025 : SlItControllerExplorer::explore - Domain:0 Bus:14 device:0 Function:0
+Fri Jun  6 16:21:05.524 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT
+Fri Jun  6 16:21:05.524 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.524 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.524 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:21:05.524 2025 : SlItControllerExplorer::explore - Adapter is good
+Fri Jun  6 16:21:05.524 2025 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Fri Jun  6 16:21:05.524 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Fri Jun  6 16:21:05.524 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl mfiCmd=5 scsiStatus=0
+Fri Jun  6 16:21:05.524 2025 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Fri Jun  6 16:21:05.524 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.525 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.525 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.525 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.526 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:21:05.526 2025 : initializing the RaidManager Instance 
+Fri Jun  6 16:21:05.526 2025 : Entering ITCtFlshCp::process
+Fri Jun  6 16:21:05.526 2025 : Entering ITCtFlshCp::getFileLength
+Fri Jun  6 16:21:05.526 2025 : Exiting ITCtFlshCp::getFileLength - File length:2076040
+Fri Jun  6 16:21:05.528 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:05.528 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:05.529 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:05.529 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:05.529 2025 : ITCtFlshCp::process - Get controller info retCode:0
+Fri Jun  6 16:21:05.529 2025 : ITCtFlshCp::process - Is controller valid:0
+Fri Jun  6 16:21:05.529 2025 : ITCtFlshCp::process - Firmware found:1
+Fri Jun  6 16:21:05.529 2025 : ITCtFlshCp::process - Signature passed
+Fri Jun  6 16:21:05.529 2025 : ITCtFlshCp::process - Is Aero image:1
+Fri Jun  6 16:21:05.529 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:36.738 2025 : StorelibItDp::processLibCommand SL responded with retcode=33120
+Fri Jun  6 16:21:36.739 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:21:36.739 2025 : MWCliRootCp::process processed for subtokenID=105 errorCode=0
+Fri Jun  6 16:21:36.739 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:21:36.739 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:21:36.739 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:39.893 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:39.893 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:21:39.893 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:39.893 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:39.893 2025 : CtMain::main command completed with retcode=0
+
+------------Debug log started ini=0 level=4-----
+Fri Jun  6 16:21:46.992 2025 : CtMain::main processing for command=/ c 0 show 
+Fri Jun  6 16:21:46.992 2025 : Entering LinuxControllerExplorer::explore 
+Fri Jun  6 16:21:46.992 2025 : Entering LinuxControllerExplorer::getCtrlCount
+Fri Jun  6 16:21:46.992 2025 : LinuxControllerExplorer::getCtrlCount _hDvr=-1 _hDvrSwr =-1
+Fri Jun  6 16:21:46.992 2025 : LinuxControllerExplorer::explore ctrlCount=1
+Fri Jun  6 16:21:46.992 2025 : returning LinuxControllerExplorer::explore ctrlIdListPtr
+Fri Jun  6 16:21:46.992 2025 : SlItControllerExplorer::explore - Entering
+Fri Jun  6 16:21:46.992 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:46.993 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:46.993 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:46.993 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:46.993 2025 : SlItControllerExplorer::explore - Getting the StoreLIB instance for SAS3.5 IT controller
+Fri Jun  6 16:21:46.993 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.136 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.136 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT
+Fri Jun  6 16:21:47.136 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.136 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.136 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_LIST to SLIT - retCode:0x0
+Fri Jun  6 16:21:47.136 2025 : SlItControllerExplorer::explore - Controller count:1
+Fri Jun  6 16:21:47.136 2025 : SlItControllerExplorer::explore - Controller count index:0
+Fri Jun  6 16:21:47.136 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT
+Fri Jun  6 16:21:47.136 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.137 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.137 2025 : SlItControllerExplorer::explore - Issuing SL_GET_PCI_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:21:47.137 2025 : SlItControllerExplorer::explore - Domain:0 Bus:14 device:0 Function:0
+Fri Jun  6 16:21:47.137 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT
+Fri Jun  6 16:21:47.137 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.137 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.137 2025 : SlItControllerExplorer::explore - Issuing SL_GET_CTRL_INFO to SLIT - retCode:0x0
+Fri Jun  6 16:21:47.137 2025 : SlItControllerExplorer::explore - Adapter is good
+Fri Jun  6 16:21:47.137 2025 : LinuxMfiDataProvider::fireIoctl DCMD=1010000 mbox.w[0]=1 mbox.w[1]=0 mbox.w[2]=0
+Fri Jun  6 16:21:47.137 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl retcode=-1 cmdStatus=255
+Fri Jun  6 16:21:47.137 2025 : LinuxMfiDataProvider::fireIoctl send_ioctl mfiCmd=5 scsiStatus=0
+Fri Jun  6 16:21:47.137 2025 : LinuxMfiDataProvider::fireIoctl returning with =-1 errno=9
+Fri Jun  6 16:21:47.137 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.138 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.138 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.139 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.140 2025 : Entering MWCliRootCp::process ver=007.3404.0000.0000 April 18, 2025 copyright=2025
+Fri Jun  6 16:21:47.140 2025 : initializing the RaidManager Instance 
+Fri Jun  6 16:21:47.140 2025 : Entering ITSwCtPrCp::process
+Fri Jun  6 16:21:47.140 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:47.140 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.141 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.141 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:47.141 2025 : ITSwCtPrCp::process - Retreiving basic controller info
+Fri Jun  6 16:21:47.141 2025 : Entering ITSwCtPrCp::getBasicCtrlInfo
+Fri Jun  6 16:21:47.141 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:47.141 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.141 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.141 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:47.141 2025 : Entering ITSwCtPrCp::getPciInfo
+Fri Jun  6 16:21:47.141 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.143 2025 : Exiting ITSwCtPrCp::getPciInfo
+Fri Jun  6 16:21:47.143 2025 : Entering ITSwCtPrCp::getDriverInfo
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.143 2025 : Exiting ITSwCtPrCp::getDriverInfo
+Fri Jun  6 16:21:47.143 2025 : Entering ITUtils::GetManufacturingPage0
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.143 2025 : Exiting ITUtils::GetManufacturingPage0
+Fri Jun  6 16:21:47.143 2025 : ITUtils::isPlatformSecSupported - Getting controller information...
+Fri Jun  6 16:21:47.143 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.143 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:47.143 2025 : ITUtils::isPlatformSecSupported - getSlCtrlInfo retCode:0
+Fri Jun  6 16:21:47.143 2025 : Exiting ITSwCtPrCp::getBasicCtrlInfo
+Fri Jun  6 16:21:47.143 2025 : ITSwCtPrCp::process - Retreiving drive information
+Fri Jun  6 16:21:47.143 2025 : Entering ITSwCtPrCp::getPdInfoTable
+Fri Jun  6 16:21:47.143 2025 : Entering ITUtils::GetPdList
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.143 2025 : Exiting ITUtils::GetPdList
+Fri Jun  6 16:21:47.143 2025 : Entering ITSwCtPrCp::createSortedPdData
+Fri Jun  6 16:21:47.143 2025 : Exiting ITSwCtPrCp::createSortedPdData
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.143 2025 : Entering ITUtils::slGetPdInfo deviceId=0
+Fri Jun  6 16:21:47.143 2025 : Entering ITUtils::getPdInfo for devid=0
+Fri Jun  6 16:21:47.143 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:47.144 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:47.144 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:47.144 2025 : ITUtils::slGetPdInfo  pdfwstate=0 scsiDevType =13
+Fri Jun  6 16:21:47.144 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:47.144 2025 : Entering ITUtils::slGetPdInfo deviceId=1
+Fri Jun  6 16:21:47.144 2025 : Entering ITUtils::getPdInfo for devid=1
+Fri Jun  6 16:21:47.144 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:48.148 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:48.148 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:48.148 2025 : ITUtils::slGetPdInfo  pdfwstate=1 scsiDevType =0
+Fri Jun  6 16:21:48.148 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:48.148 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:48.148 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:48.148 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:48.148 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:48.148 2025 : Entering ITUtils::readInquiryData targetId=1 scsiDevType=3
+Fri Jun  6 16:21:48.148 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:48.149 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:48.149 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:48.149 2025 : Entering ITUtils::slGetPdInfo deviceId=4
+Fri Jun  6 16:21:48.149 2025 : Entering ITUtils::getPdInfo for devid=4
+Fri Jun  6 16:21:48.149 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:49.153 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:49.153 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:49.153 2025 : ITUtils::slGetPdInfo  pdfwstate=4 scsiDevType =0
+Fri Jun  6 16:21:49.153 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:49.153 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:49.153 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:49.154 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:49.154 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:49.154 2025 : Entering ITUtils::readInquiryData targetId=4 scsiDevType=3
+Fri Jun  6 16:21:49.154 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:49.154 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:49.154 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:49.154 2025 : Entering ITUtils::slGetPdInfo deviceId=5
+Fri Jun  6 16:21:49.154 2025 : Entering ITUtils::getPdInfo for devid=5
+Fri Jun  6 16:21:49.154 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:50.158 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:50.158 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:50.158 2025 : ITUtils::slGetPdInfo  pdfwstate=5 scsiDevType =0
+Fri Jun  6 16:21:50.158 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:50.158 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:50.158 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:50.159 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:50.159 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:50.159 2025 : Entering ITUtils::readInquiryData targetId=5 scsiDevType=3
+Fri Jun  6 16:21:50.159 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:50.160 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:50.160 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:50.160 2025 : Entering ITUtils::slGetPdInfo deviceId=3
+Fri Jun  6 16:21:50.160 2025 : Entering ITUtils::getPdInfo for devid=3
+Fri Jun  6 16:21:50.160 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:51.164 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:51.164 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:51.164 2025 : ITUtils::slGetPdInfo  pdfwstate=3 scsiDevType =0
+Fri Jun  6 16:21:51.164 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:51.164 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:51.164 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:51.165 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:51.165 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:51.165 2025 : Entering ITUtils::readInquiryData targetId=3 scsiDevType=3
+Fri Jun  6 16:21:51.165 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:51.165 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:51.165 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:51.165 2025 : Entering ITUtils::slGetPdInfo deviceId=2
+Fri Jun  6 16:21:51.165 2025 : Entering ITUtils::getPdInfo for devid=2
+Fri Jun  6 16:21:51.165 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:52.169 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:52.169 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:52.169 2025 : ITUtils::slGetPdInfo  pdfwstate=2 scsiDevType =0
+Fri Jun  6 16:21:52.169 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:52.169 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:52.169 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:52.170 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:52.170 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:52.170 2025 : Entering ITUtils::readInquiryData targetId=2 scsiDevType=3
+Fri Jun  6 16:21:52.170 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:52.171 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:52.171 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:52.171 2025 : Entering ITUtils::slGetPdInfo deviceId=6
+Fri Jun  6 16:21:52.171 2025 : Entering ITUtils::getPdInfo for devid=6
+Fri Jun  6 16:21:52.171 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:53.175 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:53.175 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:53.175 2025 : ITUtils::slGetPdInfo  pdfwstate=6 scsiDevType =0
+Fri Jun  6 16:21:53.175 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:53.175 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:53.175 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:53.175 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:53.175 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:53.175 2025 : Entering ITUtils::readInquiryData targetId=6 scsiDevType=3
+Fri Jun  6 16:21:53.175 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:53.176 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:53.176 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:53.176 2025 : Entering ITUtils::slGetPdInfo deviceId=7
+Fri Jun  6 16:21:53.176 2025 : Entering ITUtils::getPdInfo for devid=7
+Fri Jun  6 16:21:53.176 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:54.178 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:54.178 2025 : Exiting ITUtils::getPdInfo
+Fri Jun  6 16:21:54.178 2025 : ITUtils::slGetPdInfo  pdfwstate=7 scsiDevType =0
+Fri Jun  6 16:21:54.178 2025 : ITUtils::slGetPdInfo  pdfwstate=64
+Fri Jun  6 16:21:54.178 2025 : Entering ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:54.178 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:54.179 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:54.179 2025 : Exiting ITUtils::getSlCtrlInfo
+Fri Jun  6 16:21:54.179 2025 : Entering ITUtils::readInquiryData targetId=7 scsiDevType=3
+Fri Jun  6 16:21:54.179 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:54.179 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:54.179 2025 : Exiting ITUtils::slGetPdInfo
+Fri Jun  6 16:21:54.179 2025 : Exiting ITSwCtPrCp::process
+Fri Jun  6 16:21:54.179 2025 : MWCliRootCp::process processed for subtokenID=12 errorCode=0
+Fri Jun  6 16:21:54.179 2025 : Entering MWCliRootCp::handleOuput retCode=0, DriveFull=0
+Fri Jun  6 16:21:54.179 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IT
+Fri Jun  6 16:21:54.179 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:54.183 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:54.183 2025 : CpControllerMgmt::process SL_EXIT_LIB called for IR3
+Fri Jun  6 16:21:54.183 2025 : StorelibItDp::processLibCommand SL request sent
+Fri Jun  6 16:21:54.183 2025 : StorelibItDp::processLibCommand SL responded with retcode=0
+Fri Jun  6 16:21:54.183 2025 : CtMain::main command completed with retcode=0
+
